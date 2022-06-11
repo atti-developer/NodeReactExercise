@@ -156,10 +156,10 @@ const List = () => {
                     <RB.Table striped bordered hover variant="dark" responsive>
                         <thead>
                             <tr class="vtable text-center">
-                                <th className="text-center">S. No.</th>
-                                <th style={{ cursor: "pointer" }} onClick={sortByAlphaTerm}>Terms</th>
-                                <th style={{ cursor: "pointer" }} onClick={sortByAlphaDef}>Definitions</th>
-                                <th className="action_align">Action</th>
+                                <th className="text-center" style={{ width: "10%" }}>S. No.</th>
+                                <th style={{ cursor: "pointer", width: "20%" }} onClick={sortByAlphaTerm}>Terms</th>
+                                <th style={{ cursor: "pointer", width: "60%" }} onClick={sortByAlphaDef}>Definitions</th>
+                                <th className="action_align" style={{ width: "10%" }}>Action</th>
                             </tr>
                         </thead>
                         <tbody>

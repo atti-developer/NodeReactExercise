@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"glossaryDB.glossary"},{"v":{"$numberInt":"2"},"unique":true,"key":{"terms":{"$numberInt":"1"}},"name":"terms_1","ns":"glossaryDB.glossary","background":true}],"uuid":"5503bb0fc619467f9ec00cfc2bae1c63"}

@@ -74,7 +74,7 @@ exportFuns.get_grossaries = async (req, res) => {
         let queryPattern = []
         queryPattern.push({ $match: matchPattern })
         //  sortPattern
-        const sortPattern = { createdAt: -1 }
+        const sortPattern = { _id: -1 }
 
         customerService.getAggregatePaginatedData(queryPattern, sortPattern, page, limit).then((paginatedData) => {
             res.status(200).json({ status: true, msg: "SUCCESS", data: paginatedData });
@@ -133,7 +133,7 @@ exportFuns.create_grossaries = async (req, res) => {
             res.status(200).json({ status: true, msg: "RECORD ALREADY EXISTS", data: [] });
         }else{
             customerService.create(createPattern).then(async createRes => {
-                res.status(200).json({ status: true, msg: "GLOSSARY_CREATED_SUCCESS", data: createRes });
+                res.status(200).json({ status: true, msg: "GLOSSARY CREATED SUCCESSFULLY", data: createRes });
             }).catch(err => {
                 let resMsg = Validation.getErrorMessage(err);
                 res.status(200).json({ status: false, msg: "SOMETHNG_WENT_WRONG", data: resMsg });

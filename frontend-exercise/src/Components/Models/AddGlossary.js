@@ -73,6 +73,7 @@ const AddGlossary = (
                                                 <RB.Form.Control
                                                     type="text"
                                                     name="terms"
+                                                    placeholder="Terms..."
                                                     onChange={handleChange}
                                                 />
                                                 <p className="text-danger"> {ErrorMsg !== "" ? ErrorMsg : ""}</p>
@@ -83,9 +84,11 @@ const AddGlossary = (
                                                 <RB.Form.Label>Definitions :</RB.Form.Label>
                                             </RB.Col>
                                             <RB.Col lg={7} md={8}>
-                                                <RB.Form.Control
-                                                    type="definitions"
+                                                
+                                                 <RB.Form.Control
+                                                    as="textarea"
                                                     name="definitions"
+                                                    placeholder="Definitions...."
                                                     onChange={handleChange}
                                                 />
                                                 <p className="text-danger"> {ErrorMsg !== "" ? ErrorMsg : ""}</p>

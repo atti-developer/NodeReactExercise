@@ -74,7 +74,7 @@ const EditGlossary = (
                                             </RB.Col>
                                             <RB.Col lg={7} md={8}>
                                                 <RB.Form.Control
-                                                    type="definitions"
+                                                    as="textarea"
                                                     name="definitions"
                                                     value={FormData.definitions}
                                                     onChange={handleChange}
