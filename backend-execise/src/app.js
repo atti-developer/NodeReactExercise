@@ -10,7 +10,6 @@ require('./config/dbconfig');
 const express = require('express');
 const app = express();
 const server = http.Server(app);
-//Changed  by 
 // Set HTTP Request Acceptance Format
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));

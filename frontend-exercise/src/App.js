@@ -6,8 +6,6 @@ import {
    
 } from "react-router-dom";
 import List from "./Views/Glossary/List";
-
-
 export default function App() {
   return (
     <Router>
