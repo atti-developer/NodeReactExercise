@@ -11,20 +11,20 @@ PORT : 3090
 DB NAME : GlossaryDB
 Base Route : /api
 
-MODULE
-  -- ROUTES
+## MODULE
+ ### -- ROUTES
       -- Customer Route
-  -- CONTROLLER
+###  -- CONTROLLER
       -- Customer Controller
-  SERVICES
+ ### SERVICES
       -- Customer Services
-  MODEL
+ ### MODEL
       -- Customer Model
-  CONFIG
+ ### CONFIG
       -- DB Connectivity & Public Variables
-   HELPER
+  ### HELPER
     -- Putting Validations
-  app.js -- base file
+  ### app.js -- base file
 
 # FRONTEND
 # Getting Started with Create React App
